@@ -137,18 +137,18 @@ int main()
     printf("Carta 2 - %s (%s): %lu\n", cidade2, estado2, populacao2);
 
     // Estrutura de decisão para determinar a carta vencedora
+    if (populacao1 == populacao2)
+    {
+        printf("\nResultado: Empate! As duas cidades têm a mesma população.\n");
+    }
+
     if (populacao1 > populacao2)
     {
         printf("\nResultado: Carta 1 (%s) venceu!\n", cidade1);
     }
-
-    if (populacao2 > populacao1)
-    {
-        printf("\nResultado: Carta 2 (%s) venceu!\n", cidade2);
-    }
     else
     {
-        printf("\nResultado: Empate! As duas cidades têm a mesma população.\n");
+        printf("\nResultado: Carta 2 (%s) venceu!\n", cidade2);
     }
 
     return 0;
